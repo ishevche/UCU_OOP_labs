@@ -14,6 +14,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Test with Maven
-      	run: |
-      	  cd Lab4
+        run: |
+          cd Lab4
           mvn --batch-mode --update-snapshots package
