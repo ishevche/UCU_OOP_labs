@@ -1,4 +1,4 @@
-name: Java CI
+name: Lab 5
 
 on:
   push:
@@ -18,12 +18,12 @@ jobs:
           java-version: '15'
           distribution: 'adopt'
       - name: Lint Code Base
-        uses:  github/super-linter/slim@v4
+        uses: github/super-linter/slim@v4
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
-          DEFAULT_WORKSPACE: ./Lab5
+          FILTER_REGEX_INCLUDE: .*Lab5/.*
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
-        working-directory: ./Lab5
+        working-directory: ./La	b5

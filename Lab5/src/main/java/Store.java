@@ -10,8 +10,9 @@ public class Store {
 
     public FlowerBucket search(FlowerBucket bucket) {
         for (FlowerBucket bucketBucket : buckets) {
-            if (bucketBucket.equals(bucket))
+            if (bucketBucket.equals(bucket)) {
                 return bucketBucket;
+            }
         }
         return null;
     }

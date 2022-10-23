@@ -17,8 +17,8 @@ public class FlowerBucket {
     }
 
     public boolean equals(Object o) {
-        if (o == null) return false;
-        if (!(o instanceof FlowerBucket)) return false;
+        if (o == null) { return false; }
+        if (!(o instanceof FlowerBucket)) { return false; }
         return packs.equals(((FlowerBucket) o).packs);
     }
 }

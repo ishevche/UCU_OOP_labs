@@ -12,9 +12,9 @@ public class FlowerPack {
     }
 
     public boolean equals(Object o) {
-        if (o == null) return false;
-        if (!(o instanceof FlowerPack)) return false;
-        return quantity == ((FlowerPack) o).quantity &&
-                flower.equals(((FlowerPack) o).flower);
+        if (o == null) { return false; }
+        if (!(o instanceof FlowerPack)) { return false; }
+        return quantity == ((FlowerPack) o).quantity
+                && flower.equals(((FlowerPack) o).flower);
     }
 }

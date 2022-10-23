@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -12,42 +11,42 @@ public class StoreTest {
 
     @Test
     public void testSearch() {
-        Flower flower1 = new Flower();
-        Flower flower2 = new Flower();
-        Flower test_flower1 = new Flower();
-        Flower test_flower2 = new Flower();
-        Flower test_flower3 = new Tulip();
-        int price1 = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int price2 = RANDOM_GENERATOR.nextInt(MAX_PRICE);
-        int quantity1 = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
-        int quantity2 = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
-        flower1.setPrice(price1);
-        flower1.setColor(FlowerColor.BLUE);
-        flower2.setPrice(price2);
-        flower2.setColor(FlowerColor.RED);
-        test_flower1.setPrice(price1);
-        test_flower1.setColor(FlowerColor.BLUE);
-        test_flower2.setPrice(price2);
-        test_flower2.setColor(FlowerColor.RED);
-        test_flower3.setPrice(price2);
-        test_flower3.setColor(FlowerColor.RED);
-        FlowerPack pack1 = new FlowerPack(flower1, quantity1);
-        FlowerPack pack2 = new FlowerPack(flower2, quantity2);
+        Flower flowerOne = new Flower();
+        Flower flowerTwo = new Flower();
+        Flower testFlowerOne = new Flower();
+        Flower testFlowerTwo = new Flower();
+        Flower testFlowerThree = new Tulip();
+        int priceOne = RANDOM_GENERATOR.nextInt(MAX_PRICE);
+        int priceTwo = RANDOM_GENERATOR.nextInt(MAX_PRICE);
+        int quantityOne = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        int quantityTwo = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        flowerOne.setPrice(priceOne);
+        flowerOne.setColor(FlowerColor.BLUE);
+        flowerTwo.setPrice(priceTwo);
+        flowerTwo.setColor(FlowerColor.RED);
+        testFlowerOne.setPrice(priceOne);
+        testFlowerOne.setColor(FlowerColor.BLUE);
+        testFlowerTwo.setPrice(priceTwo);
+        testFlowerTwo.setColor(FlowerColor.RED);
+        testFlowerThree.setPrice(priceTwo);
+        testFlowerThree.setColor(FlowerColor.RED);
+        FlowerPack packOne = new FlowerPack(flowerOne, quantityOne);
+        FlowerPack packTwo = new FlowerPack(flowerTwo, quantityTwo);
         FlowerBucket bucket = new FlowerBucket();
-        FlowerPack test_pack1 = new FlowerPack(flower1, quantity1);
-        FlowerPack test_pack2 = new FlowerPack(flower2, quantity2);
-        FlowerBucket test_bucket1 = new FlowerBucket();
-        FlowerPack test_pack3 = new FlowerPack(test_flower3, quantity2);
-        FlowerBucket test_bucket2 = new FlowerBucket();
+        FlowerPack testPackOne = new FlowerPack(flowerOne, quantityOne);
+        FlowerPack testPackTwo = new FlowerPack(flowerTwo, quantityTwo);
+        FlowerBucket testBucketOne = new FlowerBucket();
+        FlowerPack testPackThree = new FlowerPack(testFlowerThree, quantityTwo);
+        FlowerBucket testBucketTwo = new FlowerBucket();
         Store store = new Store();
-        bucket.add(pack1);
-        bucket.add(pack2);
-        test_bucket1.add(test_pack1);
-        test_bucket1.add(test_pack2);
-        test_bucket2.add(test_pack1);
-        test_bucket2.add(test_pack3);
+        bucket.add(packOne);
+        bucket.add(packTwo);
+        testBucketOne.add(testPackOne);
+        testBucketOne.add(testPackTwo);
+        testBucketTwo.add(testPackOne);
+        testBucketTwo.add(testPackThree);
         store.add(bucket);
-        Assertions.assertSame(store.search(test_bucket1), bucket);
-        Assertions.assertNotSame(store.search(test_bucket2), bucket);
+        Assertions.assertSame(store.search(testBucketOne), bucket);
+        Assertions.assertNotSame(store.search(testBucketTwo), bucket);
     }
 }
