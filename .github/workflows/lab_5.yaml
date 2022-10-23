@@ -24,4 +24,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
       - name: Test with Maven
-        run: mvn --batch-mode --update-snapshots package
+        run: |
+          cd Lab5
+          mvn --batch-mode --update-snapshots package
