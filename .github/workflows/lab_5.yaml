@@ -23,7 +23,7 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
+        working-directory: ./Lab5
       - name: Test with Maven
-        run: |
-          cd Lab5
-          mvn --batch-mode --update-snapshots package
+        run: mvn --batch-mode --update-snapshots package
+        working-directory: ./Lab5
