@@ -26,4 +26,4 @@ jobs:
           FILTER_REGEX_INCLUDE: .*Lab5/.*
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
-        working-directory: ./La	b5
+        working-directory: ./Lab5
