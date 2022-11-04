@@ -1,4 +1,4 @@
-name: Lab 5
+name: Lab 7
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
-          FILTER_REGEX_INCLUDE: .*Lab5/.*
+          FILTER_REGEX_INCLUDE: .*Lab7/src/main/.*
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
-        working-directory: ./Lab5
+        working-directory: ./Lab7
