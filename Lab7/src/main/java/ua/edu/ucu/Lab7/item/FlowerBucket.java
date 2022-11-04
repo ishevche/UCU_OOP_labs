@@ -1,0 +1,35 @@
+package ua.edu.ucu.Lab7.item;
+
+import ua.edu.ucu.Lab7.item.Flower.Flower;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FlowerBucket {
+    private final List<FlowerPack> packs = new ArrayList<>();
+
+    public void addFlowers(FlowerPack pack) {
+        packs.add(pack);
+    }
+
+    public double price() {
+        double ans = 0;
+        for (FlowerPack pack : packs) {
+            ans += pack.getPrice();
+        }
+        return ans;
+    }
+
+    public boolean equals(Object o) {
+        if (o == null) { return false; }
+        if (!(o instanceof FlowerBucket)) { return false; }
+        return packs.equals(((FlowerBucket) o).packs);
+    }
+
+    public boolean searchFlower(Flower flower) {
+        for (FlowerPack pack : packs) {
+            if (pack.search(flower)) return true;
+        }
+        return false;
+    }
+}

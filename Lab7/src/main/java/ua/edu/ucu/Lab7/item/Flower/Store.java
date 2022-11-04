@@ -1,0 +1,24 @@
+package ua.edu.ucu.Lab7.item.Flower;
+
+import ua.edu.ucu.Lab7.item.FlowerBucket;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Store {
+    private final List<FlowerBucket> buckets = new ArrayList<>();
+
+    public void add(FlowerBucket bucket) {
+        buckets.add(bucket);
+    }
+
+    public FlowerBucket search(FlowerBucket bucket) {
+        for (FlowerBucket bucketBucket : buckets) {
+            if (bucketBucket.equals(bucket)) {
+                return bucketBucket;
+            }
+        }
+        return null;
+    }
+
+}
