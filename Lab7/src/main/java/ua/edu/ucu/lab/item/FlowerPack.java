@@ -1,6 +1,6 @@
 package ua.edu.ucu.lab.item;
 
-import ua.edu.ucu.lab.item.Flower.Flower;
+import ua.edu.ucu.lab.item.flower.Flower;
 
 public class FlowerPack {
     private final Flower flower;

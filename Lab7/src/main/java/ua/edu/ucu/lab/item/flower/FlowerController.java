@@ -1,4 +1,4 @@
-package ua.edu.ucu.lab.item.Flower;
+package ua.edu.ucu.lab.item.flower;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

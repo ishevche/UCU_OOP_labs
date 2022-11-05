@@ -19,8 +19,8 @@ public class PayPalPaymentStrategy implements Payment {
     }
 
     @Override
-    public void pay(double payed_price) {
+    public void pay(double payedPrice) {
         System.out.println("Thank you for your PayPal payment!");
-        payed += payed_price;
+        payed += payedPrice;
     }
 }

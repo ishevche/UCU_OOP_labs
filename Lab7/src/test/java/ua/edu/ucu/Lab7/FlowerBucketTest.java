@@ -3,8 +3,8 @@ package ua.edu.ucu.Lab7;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ua.edu.ucu.lab.item.Flower.Flower;
-import ua.edu.ucu.lab.item.Flower.FlowerColor;
+import ua.edu.ucu.lab.item.flower.Flower;
+import ua.edu.ucu.lab.item.flower.FlowerColor;
 import ua.edu.ucu.lab.item.FlowerBucket;
 import ua.edu.ucu.lab.item.FlowerPack;
 

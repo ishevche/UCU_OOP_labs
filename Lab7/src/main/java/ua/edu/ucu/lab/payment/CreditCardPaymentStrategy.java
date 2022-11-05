@@ -19,8 +19,8 @@ public class CreditCardPaymentStrategy implements Payment {
     }
 
     @Override
-    public void pay(double payed_price) {
+    public void pay(double payedPrice) {
         System.out.println("Thank you for your credit card payment!");
-        payed += payed_price;
+        payed += payedPrice;
     }
 }

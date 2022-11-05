@@ -1,4 +1,4 @@
-package ua.edu.ucu.lab.item.Flower;
+package ua.edu.ucu.lab.item.flower;
 
 import ua.edu.ucu.lab.item.FlowerBucket;
 

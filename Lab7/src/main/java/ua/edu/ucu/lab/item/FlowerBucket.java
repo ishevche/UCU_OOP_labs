@@ -1,6 +1,6 @@
 package ua.edu.ucu.lab.item;
 
-import ua.edu.ucu.lab.item.Flower.Flower;
+import ua.edu.ucu.lab.item.flower.Flower;
 
 import java.util.ArrayList;
 import java.util.List;
