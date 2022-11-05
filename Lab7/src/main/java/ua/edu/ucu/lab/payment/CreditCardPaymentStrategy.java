@@ -1,4 +1,4 @@
-package ua.edu.ucu.Lab7.payment;
+package ua.edu.ucu.lab.payment;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,8 +19,8 @@ public class CreditCardPaymentStrategy implements Payment {
     }
 
     @Override
-    public void pay(double price) {
+    public void pay(double payed_price) {
         System.out.println("Thank you for your credit card payment!");
-        payed += price;
+        payed += payed_price;
     }
 }

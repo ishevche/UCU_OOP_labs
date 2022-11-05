@@ -1,4 +1,4 @@
-package ua.edu.ucu.Lab7.payment;
+package ua.edu.ucu.lab.payment;
 
 public interface Payment {
     void setPrice(double price);

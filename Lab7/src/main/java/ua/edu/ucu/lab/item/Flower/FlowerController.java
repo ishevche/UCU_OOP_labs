@@ -1,4 +1,4 @@
-package ua.edu.ucu.Lab7.item.Flower;
+package ua.edu.ucu.lab.item.Flower;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,14 +9,16 @@ import java.util.List;
 @RestController
 @RequestMapping
 public class FlowerController {
+    private static final double EXAMPLE_LENGTH = 12.5;
+    private static final double EXAMPLE_PRICE = 5.0;
 
     @GetMapping
     public List<Flower> flowers() {
         return List.of(
                 new Flower(
-                        12.5,
+                        EXAMPLE_LENGTH,
                         FlowerColor.RED,
-                        5.0
+                        EXAMPLE_PRICE
                 )
         );
     }

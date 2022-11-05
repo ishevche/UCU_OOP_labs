@@ -1,6 +1,6 @@
-package ua.edu.ucu.Lab7.item;
+package ua.edu.ucu.lab.item;
 
-import ua.edu.ucu.Lab7.item.Flower.Flower;
+import ua.edu.ucu.lab.item.Flower.Flower;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class FlowerBucket {
 
     public boolean searchFlower(Flower flower) {
         for (FlowerPack pack : packs) {
-            if (pack.search(flower)) return true;
+            if (pack.search(flower)) { return true; }
         }
         return false;
     }

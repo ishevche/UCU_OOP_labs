@@ -1,6 +1,6 @@
-package ua.edu.ucu.Lab7.item.Flower;
+package ua.edu.ucu.lab.item.Flower;
 
-import ua.edu.ucu.Lab7.item.FlowerBucket;
+import ua.edu.ucu.lab.item.FlowerBucket;
 
 import java.util.ArrayList;
 import java.util.List;

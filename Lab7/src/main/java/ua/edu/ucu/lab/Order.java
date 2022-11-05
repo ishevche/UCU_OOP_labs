@@ -1,9 +1,9 @@
-package ua.edu.ucu.Lab7;
+package ua.edu.ucu.lab;
 
 import lombok.Setter;
-import ua.edu.ucu.Lab7.delivery.Delivery;
-import ua.edu.ucu.Lab7.item.Item;
-import ua.edu.ucu.Lab7.payment.Payment;
+import ua.edu.ucu.lab.delivery.Delivery;
+import ua.edu.ucu.lab.item.Item;
+import ua.edu.ucu.lab.payment.Payment;
 
 import java.util.LinkedList;
 
@@ -28,8 +28,8 @@ public class Order {
             deliveryStrategy.deliver(items);
             return true;
         } else {
-            System.out.println("You have to pay for order before " +
-                    "we can deliver it to you");
+            System.out.println("You have to pay for order before "
+                    + "we can deliver it to you");
             return false;
         }
     }

@@ -1,6 +1,6 @@
-package ua.edu.ucu.Lab7.item;
+package ua.edu.ucu.lab.item;
 
-import ua.edu.ucu.Lab7.item.Flower.Flower;
+import ua.edu.ucu.lab.item.Flower.Flower;
 
 public class FlowerPack {
     private final Flower flower;
@@ -22,7 +22,7 @@ public class FlowerPack {
                 && flower.equals(((FlowerPack) o).flower);
     }
 
-    protected boolean search(Flower flower) {
-        return this.flower.equals(flower);
+    protected boolean search(Flower other) {
+        return flower.equals(other);
     }
 }

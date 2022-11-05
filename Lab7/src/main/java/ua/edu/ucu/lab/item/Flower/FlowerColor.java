@@ -1,4 +1,4 @@
-package ua.edu.ucu.Lab7.item.Flower;
+package ua.edu.ucu.lab.item.Flower;
 
 public enum FlowerColor {
     /**

@@ -2,9 +2,9 @@ package ua.edu.ucu.Lab7;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ua.edu.ucu.Lab7.payment.CreditCardPaymentStrategy;
-import ua.edu.ucu.Lab7.payment.PayPalPaymentStrategy;
-import ua.edu.ucu.Lab7.payment.Payment;
+import ua.edu.ucu.lab.payment.CreditCardPaymentStrategy;
+import ua.edu.ucu.lab.payment.PayPalPaymentStrategy;
+import ua.edu.ucu.lab.payment.Payment;
 
 public class PaymentTests {
 

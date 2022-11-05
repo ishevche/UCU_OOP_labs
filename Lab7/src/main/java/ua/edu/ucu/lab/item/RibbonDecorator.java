@@ -1,15 +1,16 @@
-package ua.edu.ucu.Lab7.item;
+package ua.edu.ucu.lab.item;
 
 public class RibbonDecorator extends ItemDecorator {
+    private static final int DECORATOR_PRICE = 40;
     private final Item item;
 
     public RibbonDecorator(Item item) {
         this.item = item;
-        description = "Ribbon decoration for " + item.description;
+        setDescription("Ribbon decoration for " + item.getDescription());
     }
 
     @Override
     public double price() {
-        return 40 + item.price();
+        return DECORATOR_PRICE + item.price();
     }
 }

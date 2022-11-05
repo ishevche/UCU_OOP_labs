@@ -1,5 +1,5 @@
 
-package ua.edu.ucu.Lab7.item;
+package ua.edu.ucu.lab.item;
 
 import java.util.ArrayList;
 import java.util.List;

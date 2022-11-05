@@ -1,13 +1,13 @@
-package ua.edu.ucu.Lab7;
+package ua.edu.ucu.lab;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lab7Application {
+public class LabApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Lab7Application.class, args);
+        SpringApplication.run(LabApplication.class, args);
     }
 
 }

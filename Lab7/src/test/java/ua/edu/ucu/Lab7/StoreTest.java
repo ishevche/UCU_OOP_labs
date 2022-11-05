@@ -2,11 +2,11 @@ package ua.edu.ucu.Lab7;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ua.edu.ucu.Lab7.item.Flower.Flower;
-import ua.edu.ucu.Lab7.item.Flower.FlowerColor;
-import ua.edu.ucu.Lab7.item.Flower.Store;
-import ua.edu.ucu.Lab7.item.FlowerBucket;
-import ua.edu.ucu.Lab7.item.FlowerPack;
+import ua.edu.ucu.lab.item.Flower.Flower;
+import ua.edu.ucu.lab.item.Flower.FlowerColor;
+import ua.edu.ucu.lab.item.Flower.Store;
+import ua.edu.ucu.lab.item.FlowerBucket;
+import ua.edu.ucu.lab.item.FlowerPack;
 
 import java.util.Random;
 

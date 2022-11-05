@@ -1,15 +1,15 @@
-package ua.edu.ucu.Lab7.delivery;
+package ua.edu.ucu.lab.payment;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "delivery")
-public class DeliveryController {
+@RequestMapping(path = "payment")
+public class PaymentController {
 
     @GetMapping
-    public String getDeliveries() {
-        return "Right now our shop can deliver products to you vai post or via DHL";
+    public String getPayments() {
+        return "Right now we support payment using credit card or via PayPal";
     }
 }

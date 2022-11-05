@@ -1,4 +1,4 @@
-package ua.edu.ucu.Lab7.item.Flower;
+package ua.edu.ucu.lab.item.Flower;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

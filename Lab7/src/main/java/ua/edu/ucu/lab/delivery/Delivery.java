@@ -1,6 +1,6 @@
-package ua.edu.ucu.Lab7.delivery;
+package ua.edu.ucu.lab.delivery;
 
-import ua.edu.ucu.Lab7.item.Item;
+import ua.edu.ucu.lab.item.Item;
 
 import java.util.List;
 
