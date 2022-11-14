@@ -5,7 +5,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 
 @Setter
@@ -38,12 +43,12 @@ public class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
-                "id=" + id +
-                ", sepalLength=" + sepalLength +
-                ", color=" + color +
-                ", price=" + price +
-                '}';
+        return "Flower{"
+                + "id=" + id
+                + ", sepalLength=" + sepalLength
+                + ", color=" + color
+                + ", price=" + price
+                + '}';
     }
 
     public boolean equals(Object o) {
