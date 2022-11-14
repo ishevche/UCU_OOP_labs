@@ -33,7 +33,7 @@ public class Flower {
     private Long id;
     private double sepalLength;
     private FlowerColor color;
-        private double price;
+    private double price;
 
     public Flower(double sepalLength, FlowerColor color, double price) {
         this.sepalLength = sepalLength;
