@@ -1,4 +1,4 @@
-package ua.edu.ucu.lab.item.flower;
+package ua.edu.ucu.lab.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,22 +10,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "api/v1/flower")
-public class FlowerController {
-    private final FlowerService flowerService;
+@RequestMapping(path = "api/v1/user")
+public class UserController {
+    private final UserService userService;
 
     @Autowired
-    public FlowerController(FlowerService flowerService) {
-        this.flowerService = flowerService;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping
-    public List<Flower> flowers() {
-        return flowerService.getFlowers();
+    public List<User> flowers() {
+        return userService.getUsers();
     }
 
     @PostMapping
-    public void newFlower(@RequestBody Flower flower) {
-        flowerService.newFlower(flower);
+    public void newFlower(@RequestBody User user) {
+        userService.newUser(user);
     }
 }
