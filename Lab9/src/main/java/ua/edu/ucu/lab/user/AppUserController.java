@@ -11,21 +11,21 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/user")
-public class UserController {
-    private final UserService userService;
+public class AppUserController {
+    private final AppUserService userService;
 
     @Autowired
-    public UserController(UserService userService) {
+    public AppUserController(AppUserService userService) {
         this.userService = userService;
     }
 
     @GetMapping
-    public List<User> flowers() {
+    public List<AppUser> flowers() {
         return userService.getUsers();
     }
 
     @PostMapping
-    public void newFlower(@RequestBody User user) {
+    public void newFlower(@RequestBody AppUser user) {
         userService.newUser(user);
     }
 }

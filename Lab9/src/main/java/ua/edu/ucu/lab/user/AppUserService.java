@@ -6,20 +6,20 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserService {
+public class AppUserService {
 
-    private final UserRepository userRepository;
+    private final AppUserRepository userRepository;
 
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public AppUserService(AppUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    public List<User> getUsers() {
+    public List<AppUser> getUsers() {
         return userRepository.findAll();
     }
 
-    public void newUser(User user) {
+    public void newUser(AppUser user) {
         if (userRepository.findUserByEmail(user.getEmail()).isEmpty()) {
             userRepository.save(user);
         }

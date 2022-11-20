@@ -15,16 +15,16 @@ import java.time.Period;
 @NoArgsConstructor
 @Entity
 @Table
-public class User {
+public class AppUser {
     @Id
     @SequenceGenerator(
-            name = "user_id_sequence",
-            sequenceName = "user_id_sequence",
+            name = "app_user_id_sequence",
+            sequenceName = "app_user_id_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "user_id_sequence"
+            generator = "app_user_id_sequence"
     )
     private Long id;
     @Column(unique = true)
@@ -33,7 +33,7 @@ public class User {
     @Transient
     private int age;
 
-    public User(String email, LocalDate dob) {
+    public AppUser(String email, LocalDate dob) {
         this.email = email;
         this.dob = dob;
     }

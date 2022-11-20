@@ -14,7 +14,7 @@ public class FlowerConfig {
             new Flower(20., FlowerColor.RED, 25.);
 
     @Bean
-    CommandLineRunner commandLineRunner(FlowerRepository flowerRepository) {
+    CommandLineRunner setupFlowers(FlowerRepository flowerRepository) {
         return args -> {
             flowerRepository.saveAll(List.of(FLOWER_FIRST, FLOWER_SECOND));
         };
