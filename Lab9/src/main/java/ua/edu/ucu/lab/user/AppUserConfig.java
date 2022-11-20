@@ -15,7 +15,7 @@ public class UserConfig {
             new User("klym.yaroslav@ucu.edu.ua", LocalDate.of(2004, 4, 14));
 
     @Bean
-    CommandLineRunner commandLineRunner(UserRepository userRepository) {
+    CommandLineRunner setupUsers(UserRepository userRepository) {
         return args -> {
             userRepository.saveAll(List.of(USER_FIRST, USER_SECOND));
         };
