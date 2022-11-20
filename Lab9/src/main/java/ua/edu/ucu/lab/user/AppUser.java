@@ -5,7 +5,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
+import javax.persistence.Transient;
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -17,15 +22,7 @@ import java.time.Period;
 @Table
 public class AppUser {
     @Id
-    @SequenceGenerator(
-            name = "app_user_id_sequence",
-            sequenceName = "app_user_id_sequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "app_user_id_sequence"
-    )
+    @GeneratedValue
     private Long id;
     @Column(unique = true)
     private String email;

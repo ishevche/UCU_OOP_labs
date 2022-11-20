@@ -10,9 +10,11 @@ import java.util.List;
 @Configuration
 public class AppUserConfig {
     private static final AppUser USER_FIRST =
-            new AppUser("ivan.shevchenko@ucu.edu.ua", LocalDate.of(2003, 2, 2));
+            new AppUser("ivan.shevchenko@ucu.edu.ua",
+                    LocalDate.of(2003, 2, 2));
     private static final AppUser USER_SECOND =
-            new AppUser("klym.yaroslav@ucu.edu.ua", LocalDate.of(2004, 4, 14));
+            new AppUser("klym.yaroslav@ucu.edu.ua",
+                    LocalDate.of(2004, 4, 14));
 
     @Bean
     CommandLineRunner setupUsers(AppUserRepository userRepository) {
