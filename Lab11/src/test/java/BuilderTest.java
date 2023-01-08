@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import task_one.Gender;
-import task_one.User;
+import builder.Gender;
+import builder.User;
 
 public class BuilderTest {
     @Test

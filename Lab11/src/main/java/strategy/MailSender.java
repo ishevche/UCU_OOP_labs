@@ -1,4 +1,4 @@
-package task_two;
+package strategy;
 
 import com.mailjet.client.ClientOptions;
 import com.mailjet.client.MailjetClient;
@@ -11,8 +11,10 @@ import org.json.JSONObject;
 
 public class MailSender {
 
-    public static final String API_KEY = System.getenv("****************************1234");
-    public static final String API_SECRET = System.getenv("****************************abcd");
+    public static final String API_KEY =
+            System.getenv("MAILJET_API_KEY");
+    public static final String API_SECRET =
+            System.getenv("MAILJET_SECRET_KEY");
 
     @SneakyThrows
     public void sendMail(MailInfo info) {

@@ -1,4 +1,4 @@
-package task_three;
+package proxy;
 
 public class ProxyImage implements MyImage {
 

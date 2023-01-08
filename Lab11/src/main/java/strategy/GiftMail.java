@@ -1,4 +1,4 @@
-package task_two;
+package strategy;
 
 public class GiftMail implements MailCode {
     private static final String TEMPLATE = "%NAME, you have received a gift. "

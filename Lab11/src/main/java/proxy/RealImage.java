@@ -1,4 +1,4 @@
-package task_three;
+package proxy;
 
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
