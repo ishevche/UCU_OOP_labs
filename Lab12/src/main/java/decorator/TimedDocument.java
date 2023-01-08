@@ -1,6 +1,7 @@
 package decorator;
 
-public class TimedDocument implements Document{
+public class TimedDocument implements Document {
+    public static final int NANO_IN_SECOND = 1000000;
     private final Document document;
 
     TimedDocument(Document document) {
@@ -12,9 +13,9 @@ public class TimedDocument implements Document{
         long startTime = System.nanoTime();
         String data = document.parse();
         long timeElapsed = System.nanoTime() - startTime;
-        System.out.println("Parsed the document. It took " +
-                timeElapsed / 1000000 +
-                "seconds");
+        System.out.println("Parsed the document. It took "
+                + timeElapsed / NANO_IN_SECOND
+                + "seconds");
         return data;
     }
 }

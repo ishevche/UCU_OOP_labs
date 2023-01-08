@@ -1,4 +1,4 @@
-package task1;
+package task_one;
 
 import lombok.Getter;
 import lombok.Setter;

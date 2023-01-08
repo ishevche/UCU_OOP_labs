@@ -25,12 +25,12 @@ public class StampingVisitor<T> implements Visitor<T> {
 
         Map<String, String> map = new HashMap<>();
         map.put("groups", groups.toString());
-        groups.add(task.groupUuid);
+        groups.add(task.getGroupUuid());
         return map;
     }
 
     @Override
     public void onGroupEnd(Group<T> task) {
-        groups.remove(task.groupUuid);
+        groups.remove(task.getGroupUuid());
     }
 }

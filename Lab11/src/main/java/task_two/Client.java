@@ -1,4 +1,4 @@
-package task2;
+package task_two;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +17,7 @@ public class Client {
     private String email;
 
     Client(String name, int age, Gender sex, String email) {
-        this.id = count ++;
+        this.id = count++;
         this.name = name;
         this.age = age;
         this.sex = sex;

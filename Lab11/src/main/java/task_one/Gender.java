@@ -1,4 +1,4 @@
-package task2;
+package task_one;
 
 public enum Gender {
     MALE, FEMALE

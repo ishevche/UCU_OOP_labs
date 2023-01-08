@@ -1,4 +1,4 @@
-package task2;
+package task_two;
 
 import com.mailjet.client.ClientOptions;
 import com.mailjet.client.MailjetClient;
@@ -11,6 +11,9 @@ import org.json.JSONObject;
 
 public class MailSender {
 
+    public static final String API_KEY = System.getenv("****************************1234");
+    public static final String API_SECRET = System.getenv("****************************abcd");
+
     @SneakyThrows
     public void sendMail(MailInfo info) {
         String name = info.getClientName();
@@ -20,13 +23,14 @@ public class MailSender {
         MailjetClient client;
         MailjetRequest request;
         MailjetResponse response;
-        client = new MailjetClient(System.getenv("****************************1234"),
-                System.getenv("****************************abcd"), new ClientOptions("v3.1"));
+        client = new MailjetClient(API_KEY, API_SECRET,
+                new ClientOptions("v3.1"));
         request = new MailjetRequest(Emailv31.resource)
                 .property(Emailv31.MESSAGES, new JSONArray()
                         .put(new JSONObject()
                                 .put(Emailv31.Message.FROM, new JSONObject()
-                                        .put("Email", "ivan.shevchenko@ucu.edu.ua")
+                                        .put("Email",
+                                                "ivan.shevchenko@ucu.edu.ua")
                                         .put("Name", "Ivan"))
                                 .put(Emailv31.Message.TO, new JSONArray()
                                         .put(new JSONObject()

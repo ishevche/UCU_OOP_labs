@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ATM {
-    private final static Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
         int amount = SCANNER.nextInt();

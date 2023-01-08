@@ -1,4 +1,4 @@
-package task2;
+package task_two;
 
 import lombok.SneakyThrows;
 
@@ -19,7 +19,7 @@ public class MailBox {
     }
 
     @SneakyThrows
-    public void sendAll(){
+    public void sendAll() {
         for (MailInfo mail : infos) {
             sender.sendMail(mail);
         }
