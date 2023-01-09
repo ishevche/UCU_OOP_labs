@@ -3,7 +3,7 @@ package singleton;
 import java.util.Scanner;
 
 public class Main {
-    private final static Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
         User user = new User(SCANNER.nextLine(),
