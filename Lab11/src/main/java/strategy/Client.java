@@ -16,7 +16,7 @@ public class Client {
     @Getter @Setter
     private String email;
 
-    Client(String name, int age, Gender sex, String email) {
+    public Client(String name, int age, Gender sex, String email) {
         this.id = count++;
         this.name = name;
         this.age = age;

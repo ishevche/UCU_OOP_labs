@@ -50,4 +50,9 @@ public class SmartDocument implements Document {
         }
         return "";
     }
+
+    @Override
+    public String getId() {
+        return gcsPath;
+    }
 }

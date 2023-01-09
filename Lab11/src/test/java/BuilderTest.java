@@ -41,13 +41,13 @@ public class BuilderTest {
     }
 
     @Test
-    public void testSomeone() {
-        User someone = User.builder().build();
-        Assertions.assertNull(someone.getName());
-        Assertions.assertEquals(someone.getAge(), 0);
-        Assertions.assertNull(someone.getGender());
-        Assertions.assertEquals(someone.getWeight(), 0);
-        Assertions.assertEquals(someone.getHeight(), 0);
-        Assertions.assertEquals(someone.getOccupations().size(), 0);
+    public void testDefault() {
+        User defaultUser = User.builder().build();
+        Assertions.assertNull(defaultUser.getName());
+        Assertions.assertEquals(defaultUser.getAge(), 0);
+        Assertions.assertNull(defaultUser.getGender());
+        Assertions.assertEquals(defaultUser.getWeight(), 0);
+        Assertions.assertEquals(defaultUser.getHeight(), 0);
+        Assertions.assertEquals(defaultUser.getOccupations().size(), 0);
     }
 }

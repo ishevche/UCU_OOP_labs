@@ -4,7 +4,7 @@ public class TimedDocument implements Document {
     public static final int NANO_IN_SECOND = 1000000;
     private final Document document;
 
-    TimedDocument(Document document) {
+    public TimedDocument(Document document) {
         this.document = document;
     }
 
@@ -15,7 +15,12 @@ public class TimedDocument implements Document {
         long timeElapsed = System.nanoTime() - startTime;
         System.out.println("Parsed the document. It took "
                 + timeElapsed / NANO_IN_SECOND
-                + "seconds");
+                + " seconds");
         return data;
+    }
+
+    @Override
+    public String getId() {
+        return document.getId();
     }
 }
